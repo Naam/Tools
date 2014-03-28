@@ -47,6 +47,8 @@ main    (int argc, char *argv[])
         exit(1);
     }
     myxor(input, output, argv[1]);
+    fclose(input);
+    fclose(output);
 
     return 0;
 }
